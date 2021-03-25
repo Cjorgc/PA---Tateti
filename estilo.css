@@ -1,6 +1,7 @@
 #tabla {
     border-spacing: 20px;
     border-collapse: collapse;
+    font-size: 30px;
 }
 
 td{
