@@ -1,0 +1,25 @@
+#tabla {
+    border-spacing: 20px;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 50px;
+}
+
+#border {
+    border-bottom: 1px solid black;
+}
+
+#central {
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+#centralbot{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
