@@ -4,24 +4,20 @@ let cell = document.getElementsByTagName("td");
 
 for(let td of cell){
     td.addEventListener('click', event => {
-        if(playerTurn){
-            if(event.target.textContent == ""){
-                event.target.textContent = "X";
-                playerTurn = false;
-            }
-            else{
-                alert("Casillero ocupado");
-            }
+        let text;
+        playerTurn ? text = "X" : text = "O";
+        
+        if(event.target.textContent == ""){
+            event.target.textContent = text;
+            playerTurn = !playerTurn;
         }
         else{
-            if(event.target.textContent == ""){
-                event.target.textContent = "O";
-                playerTurn = true;
-            }
-            else{
-                alert("Casillero ocupado");
-            }
+            alert("Casillero ocupado");
         }
+
     })
 }
 
+function checkForWin(){
+    
+}
